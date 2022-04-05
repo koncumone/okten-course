@@ -1,0 +1,25 @@
+img {
+    width: 200px;
+}
+
+h1 {
+    color: yellow;
+}
+
+a {
+    color: yellow;
+}
+
+p {
+    color: #f3fffd;
+}
+
+li {
+    text-align: left;
+    color: coral;
+}
+
+body {
+    background: #333; /* Цвет фона */
+    text-align: center;
+}
