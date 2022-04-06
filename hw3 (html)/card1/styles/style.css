@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+}
+
+.main {
+
+    width: 951px;
+    height: 401px;
+
+    display: flex;
+    justify-content: center;
+
+    background: whitesmoke;
+}
+
+.card {
+    height: 320px;
+    width: 33.3%;
+    background: white;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 70px 15px 5px;
+
+    box-sizing: border-box;
+    border: 1px solid grey;
+
+    position: relative;
+
+}
+
+.title {
+
+    font-size: 30px;
+    font-family: Calibri, serif;
+
+    text-align: center;
+
+    margin-top: 80px;
+}
+
+.text {
+
+    font-size: 20px;
+    font-family: Calibri, serif;
+
+    text-align: center;
+
+    margin-top: 20px;
+}
+
+.button {
+    height: 41px;
+    width: 121px;
+
+    margin-top: 40px;
+
+    box-sizing: border-box;
+    border: 1px solid grey;
+    justify-content: center;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 21px;
+    text-decoration: none;
+
+    color: #000;
+}
+
+.circle {
+
+    height: 100px;
+    width: 100px;
+
+    box-sizing: border-box;
+    border: 1px solid grey;
+
+    background: white;
+    border-radius: 50%;
+
+    position: absolute;
+    top: -65px;
+}
+
+.fa-angellist {
+    font-size: 60px;
+    color: #EC9114;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 20px;
+}
