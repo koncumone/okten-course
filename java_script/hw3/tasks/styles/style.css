@@ -1,0 +1,36 @@
+
+body {
+    margin: 0;
+}
+
+.product-card {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.product-title {
+
+    width: 200px;
+
+    font-size: 20px;
+    font-family: Calibri, serif;
+    background-color: black;
+    color: aqua;
+
+    text-align: center;
+
+    box-sizing: border-box;
+    border: 1px solid grey;
+    border-radius: 10px;
+
+}
+
+.product-image {
+    
+    width: 200px;
+
+    
+}
