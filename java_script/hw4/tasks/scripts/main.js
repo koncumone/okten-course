@@ -31,7 +31,7 @@ console.log(`Площа циліндру: ${Math.floor(cylinder(2, 4))}`);
 
 // - створити функцію яка приймає масив та виводить кожен його елемент
 
-const Array = (arr) =>  {
+const array = (arr) =>  {
 
     for (const arrElement of arr) {
 
@@ -40,7 +40,7 @@ const Array = (arr) =>  {
     }
 }
 
-Array([1, 2, 3, 'test', 'koncumone', false])
+array([1, 2, 3, 'test', 'koncumone', false])
 
 
 
