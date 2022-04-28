@@ -287,13 +287,14 @@ console.log(sumArray([1, 2, 10]));
 
 const shaffleArray = (array) => {
     
-    if (array.length > 2) 
-        return console.log('Массив повинен містити не більше 2х  об\'єктів')
+    if (array.length > 2 || array.length < 2) 
+        return console.log('Массив повинен містити 2 об\'єкти')
 
 
     console.log(array.reverse());
 }
 
 
-shaffleArray([3, 4, 5]);
+shaffleArray([5]);
+shaffleArray([5, 6, 7]);
 shaffleArray([{id: 1, name: 'donel', age: 18}, {id: 2, name: 'koncumone', age: 19}]);
