@@ -287,7 +287,7 @@ console.log(sumArray([1, 2, 10]));
 
 const shaffleArray = (array) => {
     
-    if (array.length > 2 || array.length < 2) 
+    if (array.length != 2) 
         return console.log('Массив повинен містити 2 об\'єкти')
 
 
