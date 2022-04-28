@@ -1,3 +1,110 @@
+// - створити функцію яка приймає масив чисел та повертає середнє арифметичне його значень.
+
+const arithmetic = (array) => {
+
+    let index = 0;
+
+    for (const arrayElement of array) {
+
+        index += arrayElement;
+
+    }
+
+    return index / array.length
+}
+
+
+console.log(arithmetic([1, 3, 5, 2, 4]));
+
+
+
+
+// - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше (Math використовувати заборонено);
+
+function retNumber() {
+    
+    let min = arguments[0],
+        max = arguments[0];
+
+    for (const number of arguments) {
+
+        if (number > max) 
+            max = number;
+
+        if (number < min ) 
+            max = number;
+        
+    }
+
+    console.log(`Максимальне число: ${max}`);
+    
+    return min
+
+}
+
+console.log(`Мінімальне число:  ${retNumber(1, 2, 3, 4, 5, 6, 7, 8, 9)}`);
+
+
+
+
+// - створити функцію яка заповнює масив рандомними числами
+
+const randomNumbers = (numbers) => {
+    
+    let array = [];
+
+    for (let i = 0; i < 10; i++) {
+       
+        array.push(Math.floor(Math.random() * numbers));
+        
+    }
+
+    return array
+}
+
+console.log(randomNumbers(100));
+
+
+
+
+// - створити функцію яка заповнює масив рандомними числами в діапазоні від 0 до limit. limit - аргумент, який характеризує кінцеве значення діапазону.
+
+const randomArray = (value, limit) => {
+    
+    let array = [];
+
+    for (let i = 0; i < value; i++) {
+       
+        array.push(Math.floor(Math.random() * limit));
+        
+    }
+
+    return array
+}
+
+console.log(randomArray(10, 15));
+
+
+
+
+// - Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
+
+const reverseArray = (array) => {
+    return array.reverse()
+}
+
+console.log(reverseArray([2, 5, 6, 3]));
+
+
+
+
+// Переробити на стрілочні функції з попереднього дp
+console.log('-------------------------------------')
+
+
+
+
+
 // - створити функцію яка обчислює та повертає площу прямокутника зі сторонами а і б
 
 const square = (a, b) => {
@@ -8,6 +115,7 @@ console.log(`Площа прямокутника: ${square(3, 4)}`);
 
 
 
+
 // - створити функцію яка обчислює та повертає площу кола з радіусом r
 
 const round = (r) => {
@@ -15,6 +123,7 @@ const round = (r) => {
 }
 
 console.log(`Площа кола: ${Math.floor(round(5))}`);
+
 
 
 
@@ -56,7 +165,6 @@ createParagraph('something')
 
 
 
-
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
 
 const createUl = (input) => {
@@ -74,6 +182,7 @@ createUl('okten')
 
 
 
+
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
 
 const createUll = (input, count) => {
@@ -88,6 +197,8 @@ const createUll = (input, count) => {
 }
 
 createUll('koncumone', 10)
+
+
 
 
 // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
@@ -114,6 +225,7 @@ createList([1, 2, 3, 4, 5, 'text', 'owu', true, false])
 
 // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
 
+
 const objArray = (array) => {
     
     for (const arrayElement of array) {
@@ -126,6 +238,8 @@ const objArray = (array) => {
 objArray([{id: 1, name: 'donel', age: 18}, {id: 2, name: 'koncumone', age: 19}])
 
 
+
+
 // - створити функцію яка повертає найменьше число з масиву
 
 
@@ -135,9 +249,9 @@ const minElement = (array) => {
 
     for (const number of array) {
 
-        if (number < min) {
-            min = number;
-        }      
+        if (number < min)
+            min = number;    
+
     }
 
     return min
@@ -145,7 +259,6 @@ const minElement = (array) => {
 }
 
 console.log(minElement([1000, 132, 3432, 4324]))
-
 
 
 
@@ -166,3 +279,21 @@ const sumArray = (array) => {
 };
 
 console.log(sumArray([1, 2, 10]));
+
+
+
+
+// -створити функцію, яка приймає масив з 2х об'єктів, та міняє їх місцями.
+
+const shaffleArray = (array) => {
+    
+    if (array.length > 2) 
+        return console.log('Массив повинен містити не більше 2х  об\'єктів')
+
+
+    console.log(array.reverse());
+}
+
+
+shaffleArray([3, 4, 5]);
+shaffleArray([{id: 1, name: 'donel', age: 18}, {id: 2, name: 'koncumone', age: 19}]);
