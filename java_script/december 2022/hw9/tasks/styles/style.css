@@ -1,0 +1,24 @@
+.course-block{
+    border: 1px solid red;
+    margin: 20px;
+}
+.month-duration-block{
+    width: 25%;
+    display: inline-block;
+    border: 1px solid blueviolet;
+    margin: 5px;
+}
+
+.hour-duration-block{
+    width: 68%;
+    display: inline-block;
+    border: 1px solid blueviolet;
+    margin: 5px;
+}
+
+
+
+.title-block{
+    border: 1px solid blueviolet;
+    margin: 5px;
+}
